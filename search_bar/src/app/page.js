@@ -20,7 +20,8 @@ export default function Home() {
       selectedCategory === "All" || product.category === selectedCategory;
     const matchesSearch =
       product.name.toLowerCase().includes(searchQuery.toLowerCase());
-    return matchesCategory && matchesSearch;
+    
+      return matchesCategory && matchesSearch;
   });
 
   return (
@@ -53,7 +54,7 @@ export default function Home() {
           </button>
         ))}
       </nav>
-
+    
       {/* Grid of product cards filtered by category and search */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center">
         {filteredProducts.map((product) => (

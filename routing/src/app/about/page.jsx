@@ -1,9 +1,9 @@
 // app/about/[id]/page.jsx
 
-export default function AboutPage({ params }) {
+export default function AboutPage() {
     return (
       <div>
-        <h1>About ID: {params.id}</h1>
+        <h1>About page</h1>
       </div>
     );
   }
