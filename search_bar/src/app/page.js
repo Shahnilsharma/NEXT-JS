@@ -27,10 +27,12 @@ export default function Home() {
 
   return (
     
-    <div className="p-4 text-black bg-gray-100 min-h-screen">
+    <div className="p-4 text-black bg-gray-100 min-h-screen" onScroll={(e)=>{
+      e.target.value.className="fixed"
+    }}>
        <Navbar ></Navbar>
       {/* Search bar input for filtering products by name */}
-      <div  className=" search-bar cursor-copy flex mx-2.5 mb-4 border-gray-600   border rounded-xl md:p-1 md:text-lg md:ml-[70%] justify-center  overflow-hidden ">
+      <div  className=" search-bar cursor-copy flex mx-2.5 mb-4 border-gray-600  border rounded-xl md:p-1 md:text-lg md:ml-[70%] justify-center  overflow-hidden ">
         <img src="/search.jpg" className="w-6.5 my-2" alt="search icon" />
         <input
           type="text"

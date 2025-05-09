@@ -37,11 +37,11 @@ export default function AboutPage() {
         <h2 className="text-2xl font-semibold text-center mb-6">Meet the Team</h2>
         <div className="md:grid md:grid-cols-3 md:gap-6">
           {teamMembers.map((member) => (
-            <div key={member.name} className="bg-white rounded-lg shadow-lg p-4 flex flex-col items-center text-center mb-6 md:mb-0">
+            <div key={member.name} className="bg-white shadow-green-300 rounded-lg shadow-lg p-4 flex flex-col items-center text-center mb-6 md:mb-0">
               <img
                 src={member.image}
                 alt={member.image}
-                className="w-28 h-28 rounded-full mb-4 object-cover"
+                className="w-28 h-28 rounded-full mb-4 object-cover "
               />
               <h3 className="text-xl font-semibold">{member.name}</h3>
               <p className="text-green-600 font-medium">{member.role}</p>

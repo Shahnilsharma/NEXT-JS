@@ -2,7 +2,7 @@ const products = [
   {
     id: 1,
     name: "Eco-friendly Water Bottle",
-    image: "/water-bottle.jpg",
+    image: "/water-bottle.png",
     price: 15.99,
     category: "Accessories"
   },
