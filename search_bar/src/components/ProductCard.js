@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function ProductCard({ product }) {
   return (
     <Link href={`/product/${product.id}`}>
-      <div className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center space-y-2 max-w-xs w-full hover:shadow-lg transition-shadow">
+      <div className="bg-white rounded-lg shadow-green-300 p-4 flex flex-col items-center space-y-2 max-w-xs w-full hover:shadow-lg transition-shadow">
         <img
           src={product.image}
           alt={product.name}

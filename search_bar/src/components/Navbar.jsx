@@ -10,7 +10,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="text-black bg-white md:shadow-md p-4 flex items-center justify-between mb-2 sticky top-0 z-50">
+    <nav className="text-black  bg-white md:shadow-md p-4 flex items-center justify-between mb-2 sticky top-0 z-50">
       <div className="md:hidden">
         <button onClick={toggleMenu}>
           <img
